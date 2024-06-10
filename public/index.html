@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: url('image1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100">
+  <header class="fixed w-full bg-white shadow-md">
+    <nav class="container mx-auto px-6 py-3">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-xl font-bold">Ben's Movie Collection</a>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#genres" class="hover:text-gray-700">Genres</a></li>
+          <li><a href="#top-movies" class="hover:text-gray-700">Movie List</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-20 bg-opacity-75 bg-white">
+    <section class="text-center py-16">
+      <h1 class="text-4xl font-bold mb-4">Ben's Movie Collection</h1>
+      <p class="text-lg mb-6">A Collection with Comfort.All you movies in stock.</p>
+      <div class="container mx-auto px-6">
+        <img src="image1.jpg" alt="Movie Scene" class="w-full h-auto max-w-4xl mx-auto">
+      </div>
+    </section>
+
+    <section id="genres" class="py-16 bg-gray-200 bg-opacity-75">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Movie Genres</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <a href="action.html" class="p-4 bg-white rounded shadow hover:bg-gray-100">Action</a>
+          <a href="thriller.html" class="p-4 bg-white rounded shadow hover:bg-gray-100">Thriller</a>
+          <a href="adventure.html" class="p-4 bg-white rounded shadow hover:bg-gray-100">Adventure</a>
+          <!-- Add more genres as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="top-movies" class="py-16 bg-opacity-75 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Top 5 Movies</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="bg-white rounded shadow">
+            <img src="image1.jpg" alt="Movie 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Attack</h3>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-blue-500">Watch Trailer</a>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow">
+            <img src="adve1.jpg" alt="Movie 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Rides</h3>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-blue-500">Watch Trailer</a>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow">
+            <img src="thriller1.jpg" alt="Movie 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Thriller</h3>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-blue-500">Watch Trailer</a>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow">
+            <img src="action1.jpg" alt="Movie 4" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Action</h3>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-blue-500">Watch Trailer</a>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow">
+            <img src="image2.jpg" alt="Movie 5" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Watch</h3>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-blue-500">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    &copy; 2024 Ben's Movie Collection. All rights reserved.
+  </footer>
+</body>
+</html>
